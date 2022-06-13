@@ -1,0 +1,14 @@
+extends base.pug
+
+block script
+    include ../public/js/background.js
+
+block content 
+        .centered-form__box
+            h1 Join / Create
+            form(action='/chat')
+                label Display name
+                input(type='text' name='username' placeholder='Display name' required='')
+                label Room Code
+                input(type='text' name='room' placeholder='Room Code' required='')
+                button Join / Create
